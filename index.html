@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <title>Log In</title>
+  </head>
+  <body id="image">
+      <script>
+          function onLogin(){
+              var userName=document.getElementById("userName").value
+              var password=document.getElementById("password").value
+                  if(userName=="admin" && password=="pwd"){
+                       alert("Login Successfully");
+                       window.open('D:/mobileproject/frontend/window.html'); 
+                  }
+                  else{
+                      alert("Login failed")
+                  }
+          }
+      </script>
+    <div class="container-fluid background" style="margin-top: 12%;">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h3 style="text-align: center;">User Login</h3>
+                    <form>
+                        <div class="form-group mt-2">
+                            <label for="name" class=" mt-2">User Name</label>
+                            <input type="name" class="form-control mt-3" id="userName" placeholder="Enter your User name">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="password" class=" mt-2">Password</label>
+                            <input type="password" class="form-control mt-3" id="password" placeholder="Enter your Password">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success mt-3" onclick="onLogin()">Log In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>       
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+	background: #f1f3f3;
+	font-family: montserrat;
+}
+.header {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.header span {
+	color: deepskyblue;
+}
+.single-service {
+	padding: 25px;
+	transition: all .5s ease;
+}
+.single-service i {
+	font-size: 60px;
+}
+.single-service h2 {
+	font-size: 25px;
+	font-weight: 500;
+}
+.single-service:hover {
+	background: radial-gradient(circle, #00ccff, #0190f9);
+	color: #fff;
+}
